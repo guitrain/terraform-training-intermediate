@@ -1,4 +1,4 @@
-# Demonstrate use of terraform_remote_state
+# Exercise 3 - Demonstrate use of terraform_remote_state
 
 This folder contains example [Terraform](https://www.terraform.io/) configuration that is used to demonstrate the use of the [terraform_remote_state](https://www.terraform.io/docs/providers/terraform/d/remote_state.html) data source. 
 
