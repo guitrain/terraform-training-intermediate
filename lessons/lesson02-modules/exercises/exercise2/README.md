@@ -1,4 +1,4 @@
-# Lesson 2 Exercise 2 - Remote modules and version referencing
+# Exercise 2 - Remote modules and version referencing
 
 In this exercse we will learn how to source and a modules stored in a repository in
 GitHub, and how to reference specific versions of that module. The ability to reference
