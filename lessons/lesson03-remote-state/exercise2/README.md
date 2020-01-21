@@ -1,4 +1,4 @@
-# Demonstrate use of remote state backend
+# Exercise 2 - Demonstrate use of remote state backend
 
 This folder contains example [Terraform](https://www.terraform.io/) configuration that create an 
 [EC2](https://aws.amazon.com/ec2/) instance in [Amazon Web Services (AWS) account](http://aws.amazon.com/) and
