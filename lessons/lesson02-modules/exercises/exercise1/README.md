@@ -1,4 +1,4 @@
-# Lesson 2 Exercise 1 - Local modules and module output references
+# Exercise 1 - Local modules and module output references
 
 In this exercse we will learn how to source and use local modules, and how to use the outputs of one module as the input to another module or resource configuration.
 
