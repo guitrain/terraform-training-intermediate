@@ -1,5 +1,4 @@
-# ahead-terraform-training-intermediate
-Terraform intermediate level training
+# Terraform Intermediate Level Training
 
 Consists of the following lessons
 
