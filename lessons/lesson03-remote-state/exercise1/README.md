@@ -1,4 +1,4 @@
-# S3 Remote State Creation
+# Exercise 1 - S3 Remote State Creation
 
 This folder contains example [Terraform](https://www.terraform.io/) configuration that create an 
 [S3](https://aws.amazon.com/s3/) bucket and [DynamoDB](https://aws.amazon.com/dynamodb/) table in an 
