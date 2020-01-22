@@ -1,12 +1,12 @@
 # Exercise 2 - Remote modules and version referencing
 
-In this exercse we will learn how to source and a modules stored in a repository in
+In this exercise we will learn how to source and a module stored in a repository in
 GitHub, and how to reference specific versions of that module. The ability to reference
 specific versions of a module is very important when it comes to adopting recommended
 Continuous Integration best practices.
 
 This should be a short module where we are using the configuration provided in the
-previous exercise. In this exercise we will hope to :-
+previous exercise. In this exercise we will hope to:
 
 * replace the source of the local modules with a source path in GitHub
 * demonstrate how different module versions can be references and why that is important
@@ -46,21 +46,21 @@ $
 1. Replace the source of the local modules with a source path for the module in GitHub. Also,
    reference version v1.0.0 of the module. 
 
-   Versions of each of the local modules can be found at :-
+   GitHub versions of the modules can be found at:
 
-   * [terraform-aws-vpc](https://github.com/conorcasey/terraform-aws-vpc.git)
-   * [terraform-aws-sg](https://github.com/conorcasey/terraform-aws-sg.git)
-   * [terraform-aws-ec2](https://github.com/conorcasey/terraform-aws-ec2.git)
+   * https://github.com/conorcasey/terraform-aws-vpc.git
+   * https://github.com/conorcasey/terraform-aws-sg.git
+   * https://github.com/conorcasey/terraform-aws-ec2.git
 
    ```
    NOTE: For the purpose of this exercise the repositories have been made public and can be
-   sources via HTTPS. Typically in a production evvironment however, repositories would 
-   be private and it this case SSH is the recommended way to source modules as it avoids 
+   sources via HTTPS. Typically, in a production environment however, repositories would 
+   be private and in this case SSH is the recommended way to source modules as it avoids 
    having to pass any credentials as SSH keys can be configured.
    ```
 
    * Go to the main.tf file from the previous lab and replace the local module source with
-     the GitHub source, version v1.0.0. Terraforms reference material to help you determinie
+     the GitHub source, version v1.0.0. Terraforms reference material to help you determine
      the correct syntax for the new source can be found [here](https://www.terraform.io/docs/modules/sources.html#github).
    * Once the updates are made, save your changes. The new module source will need to be 
      referenced. This can be done either via running 'terraform [init](https://www.terraform.io/docs/commands/init.html)' or 'terraform [get](https://www.terraform.io/docs/commands/get.html)'
@@ -70,7 +70,7 @@ $
 
    * Update the version of the terraform-aws-sg module in main.tf to so v1.0.1. This version 
      has removed the rule permitting SSH.
-   * Execute __terraform init__ (or _terraform get__) to doownload the new version of the
+   * Execute __terraform init__ (or _terraform get__) to download the new version of the
      module
    * Execute __terraform plan__
      The plan should show that 1 resource is being deleted, the ssh security group rule,
