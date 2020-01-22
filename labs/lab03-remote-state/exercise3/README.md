@@ -43,7 +43,7 @@ $
 In main.tf, fill in values for the following :-
 
 * _BUCKET NAME_ - the name of the bucket created in exercise 1
-* _FILL IN DATA REFERENCE_ - the correct data reference that will print out each of correct values for each of the 4 outputs
+* _FILL IN DATA REFERENCE_ - the data reference that will print out the correct value for each of the 4 outputs
 
 ```
 HINT: The output value strings need to reference terraform_remote_state data source and the output name found in exercise 2 (and also listed above) for each attribute. An example can be found [here](https://www.terraform.io/docs/providers/terraform/d/remote_state.html_)
@@ -51,14 +51,14 @@ HINT: The output value strings need to reference terraform_remote_state data sou
 The solution is also available in this labs _solutions_ folder.
 ```
 
-Save you updates and deploy the code:
+Save your updates and deploy the code:
 
 ```
 terraform init
 terraform apply --auto-approve
 ```
 
-The exercise is successfull if all 4 outputs are displated like follows:-
+The exercise is successfull if all 4 outputs are displated like in the following example:
 
 ```
 $ terraform apply --auto-approve
@@ -81,7 +81,7 @@ $
 
 The exercise is complete!
 
-Clean exercise 1 and 2 when your done by running the following in each directory :
+Clean up exercise 1 and 2 when your done by running the following in each directory :
 
 ```
 terraform destroy
