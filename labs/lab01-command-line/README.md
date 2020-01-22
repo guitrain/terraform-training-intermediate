@@ -1,4 +1,4 @@
-# Lesson 1 - Terraform Command Line
+# Lab 1 - Terraform Command Line
 
 The purpose of this exercise is to get familiar with some of the more important Terraform commands. Specifically we 
 will look at:-
@@ -86,7 +86,7 @@ Verify it is removed from state:-
 $ terraform state list
         
 If we did a 'terraform destroy' it should destroy all resources provisioned by the configuration accept the 
-instance we removed from state. Lets not do that however as we have additional steps in this lesson still to complete.
+instance we removed from state. Lets not do that however as we have additional steps in this lab still to complete.
 ```
 
 ### [terraform import](https://www.terraform.io/docs/commands/import.html)

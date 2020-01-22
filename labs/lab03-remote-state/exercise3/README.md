@@ -2,7 +2,7 @@
 
 This folder contains example [Terraform](https://www.terraform.io/) configuration that is used to demonstrate the use of the [terraform_remote_state](https://www.terraform.io/docs/providers/terraform/d/remote_state.html) data source. 
 
-In the previous two exercises we created an S3 bucket and DynamoDB table to manage state, and then ran a configuration that used this S3 bucket as iits remote backend to store its state. In this final lesson we will demonstate how additional configurations can access a READ-ONLY copy of this terraform state to access outputs made available it in. The ability to do this is key to being able to segregate ownership of configurations and resources, but still make required data available for use by other teams. For example, the Network team owns and provisions all network resources in your AWS environment and thiis resouorce information is stored in its own state file owned and managed by the Network team. The application team want to provision EC2 instances and they will beed VPC ID information from the Network team. The Network team can configure the VPC ID as an output and the Application teams can then access the VPC ID usinig the terraform_remote_state data source.
+In the previous two exercises we created an S3 bucket and DynamoDB table to manage state, and then ran a configuration that used this S3 bucket as iits remote backend to store its state. In this final lab we will demonstate how additional configurations can access a READ-ONLY copy of this terraform state to access outputs made available it in. The ability to do this is key to being able to segregate ownership of configurations and resources, but still make required data available for use by other teams. For example, the Network team owns and provisions all network resources in your AWS environment and thiis resouorce information is stored in its own state file owned and managed by the Network team. The application team want to provision EC2 instances and they will beed VPC ID information from the Network team. The Network team can configure the VPC ID as an output and the Application teams can then access the VPC ID usinig the terraform_remote_state data source.
 
 In this exercise we will demonstrate this printing out all 3 of the EC2 outputs created in exercise 2 :-
 
@@ -48,7 +48,7 @@ In main.tf, fill in values for the following :-
 ```
 HINT: The output value strings need to reference terraform_remote_state data source and the output name found in exercise 2 (and also listed above) for each attribute. An example can be found [here](https://www.terraform.io/docs/providers/terraform/d/remote_state.html_)
 
-The solution is also available in this lessons _solutions_ folder.
+The solution is also available in this labs _solutions_ folder.
 ```
 
 Save you updates and deploy the code:

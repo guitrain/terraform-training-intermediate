@@ -21,11 +21,9 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket         = "<YOUR S3 BUCKET>"
-    bucket         = "tempaheadtrainingbucketlesson03"
     key            = "terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "<YOUR DYNAMODB TABLE>"
-    dynamodb_table = "statefilelock"
     encrypt        = true
   }
 }

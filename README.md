@@ -1,7 +1,7 @@
 # Terraform Intermediate Level Training
 
-Consists of the following lessons
+Consists of the following labs
 
-* Lesson 01 - Using some of terraforms most important command line sub-commands
-* Lesson 02 - An introduction to Terraform Modules, how to create and use them
-* Lesson 03 - Terraform remote state management and how to reference remote state
+* Lab 1 - Using some of terraforms most important command line sub-commands
+* Lab 2 - An introduction to Terraform Modules, how to create and use them
+* L3b 3 - Terraform remote state management and how to reference remote state

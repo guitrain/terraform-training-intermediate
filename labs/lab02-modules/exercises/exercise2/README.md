@@ -59,7 +59,7 @@ $
    having to pass any credentials as SSH keys can be configured.
    ```
 
-   * Go to the main.tf file from the previous lesson and replace the local module source with
+   * Go to the main.tf file from the previous lab and replace the local module source with
      the GitHub source, version v1.0.0. Terraforms reference material to help you determinie
      the correct syntax for the new source can be found [here](https://www.terraform.io/docs/modules/sources.html#github).
    * Once the updates are made, save your changes. The new module source will need to be 
