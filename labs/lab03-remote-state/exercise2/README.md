@@ -3,7 +3,7 @@
 This folder contains example [Terraform](https://www.terraform.io/) configuration that create an 
 [EC2](https://aws.amazon.com/ec2/) instance in [Amazon Web Services (AWS) account](http://aws.amazon.com/) and
 stores and manages the state in the S3 [remote backend for Terraform](https://www.terraform.io/docs/backends/) 
-we created iin the previous example.
+we created in the previous example.
 
 ## Pre-requisites
 
