@@ -3,11 +3,6 @@
 # You must provide a value for each of these parameters.
 # ---------------------------------------------------------------------------------------------------------------------
 
-variable "awsprofile" {
-  description = "AWS profile for account the resources are being provisioned in"
-  type        = string
-}
-
 variable "pri_availability_zone" {
   description = "AZ for the private network"
   type        = string
@@ -82,12 +77,6 @@ variable "instance_count" {
   description = "How many ec2 instances you want to provision"
   type        = number
   default     = 1
-}
-
-variable "environment" {
-  description = "What environment does this resource belong to"
-  type        = string
-  default     = "Undefined"
 }
 
 variable "vpc_cidr_block" {
