@@ -1,8 +1,8 @@
-# Exercise 1 - Local modules and module output references
+# Exercise 1 - Local modules and module output referencing
 
-In this exercse we will learn how to source and use local modules, and how to use the outputs of one module as the input to another module or resource configuration.
+In this exercise we will learn how to source and use local modules, and how to use the outputs of one module as the input to another module or resource configuration.
 
-The configuration here will provision resources using the following 3 modules :-
+The configuration here will provision resources using the following 3 modules:
 
 * terraform_aws_vpc - provision an AWS VPC
 * terraform_aws_sg  - provision AWS Security Groups
@@ -47,7 +47,7 @@ $
 1. Use the modules provided to provision 
 
 - a single VPC
-- pre-defnied security groups
+- pre-defined security groups
 - 2 ec2 instances
 
 For network range inputs, feel free to use any 10.0.x.x ranges a this is just an exercise and the networks will be provisioned within your own personal VPC.
@@ -61,7 +61,7 @@ NOTE: Both Security Group and EC2 modules will make use of outputs from the VPC 
 * VPC Id
 * Puplic IP addresses of instances created
 
-Verify these outputs correctly show up in the consol output of a _terraform apply_ 
+Verify these outputs correctly show up in the console output of a _terraform apply_ 
 
 ```
 NOTE: Solutions can be found in the 'solutions' directory if help is needed
