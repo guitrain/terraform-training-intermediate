@@ -44,19 +44,19 @@ $
 
 ## Exercise
 
-1. Use the modules provided to provision 
+1. Use the modules provided to provision:
 
 - a single VPC
 - pre-defined security groups
 - 2 ec2 instances
 
-For network range inputs, feel free to use any 10.0.x.x ranges a this is just an exercise and the networks will be provisioned within your own personal VPC.
+For network range inputs, feel free to use any 10.0.x.x ranges as this is just an exercise and the networks will be provisioned within your own personal VPC.
 
 ```
-NOTE: Both Security Group and EC2 modules will make use of outputs from the VPC module as inputs
+NOTE: Both Security Group and EC2 modules will use outputs from the VPC module as inputs in those modules
 ```
 
-2. Create output for the following
+2. Create outputs for the following:
 
 * VPC Id
 * Puplic IP addresses of instances created
