@@ -67,7 +67,7 @@ $
    * Then run 'terraform apply --auto-approve'
    
    ```
-   NOTE: Solutions can be found in the 'solutions' directory if help is needed
+   NOTE: Solutions to these exercises can be found in the 'solutions' directory if help is needed
    ```
 
 2. Demonstrate how different module versions can be references and why that is important
