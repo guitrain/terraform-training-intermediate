@@ -36,13 +36,19 @@ $
 ## Exercise
 
 Specify a name for the S3 bucket in `variables.tf` by replacig "_UNIQUE BUCKET NAME_" with a bucket name 
-in the __bucket_name__ variable.
+in the __bucket_name__ variable. Do the same for "_TABLE NAME_" in the __table_name__ variable.
 
 ```
 variable "bucket_name" {
   description = "The name of the S3 bucket. Must be globally unique."
   type        = string
   default     = <UNIQUE BUCKET NAME>
+}
+
+variable "table_name" {
+  description = "The name of the DynamoDB table. Must be unique in this AWS account."
+  type        = string
+  default     = "<TABLE NAME>"
 }
 ```
 
