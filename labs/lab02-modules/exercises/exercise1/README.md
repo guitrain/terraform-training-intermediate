@@ -50,10 +50,45 @@ $
 - pre-defined security groups
 - 2 ec2 instances
 
-For network range inputs, feel free to use any 10.0.x.x ranges as this is just an exercise and the networks will be provisioned within your own personal VPC.
+In the main.tf file, you will see the following instructions:
 
 ```
-NOTE: Both Security Group and EC2 modules will use outputs from the VPC module as inputs in those modules
+# Provision VPC
+/*
+Add vpc module here. See module README.md for usage
+*/
+
+# Provision Security Group 
+/*
+Add security group module here. See module README.md for usage
+*/
+
+# Provision EC2 instance(s)
+/*
+Add ec2 module here. See module README.md for usage
+*/
+```
+
+You will need to create a module block for each module required, provide a path to the module via
+the 'source' parameter, and provide values for any required inputs.
+
+Remember, a typical module configuration block looks like this:
+
+```
+    module "<NAME>" {
+      source = <PATH TO MODULE>
+      
+      <input parameter assignments> 
+    }
+```
+
+For network range inputs to the vpc module, feel free to use any 10.0.x.x ranges as this is just an exercise 
+and the networks will be provisioned within your own personal VPC. 
+
+Also note, both Security Group and EC2 modules will use outputs from the VPC module as inputs in those modules.
+
+```
+NOTE: Solutions can be found in the 'solutions' directory if help or direction is needed
 ```
 
 2. Create outputs for the following:
@@ -61,7 +96,9 @@ NOTE: Both Security Group and EC2 modules will use outputs from the VPC module a
 * VPC Id
 * Puplic IP addresses of instances created
 
-Verify these outputs correctly show up in the console output of a _terraform apply_ 
+Declare these outputs in the _outputs.tf_ file provided.
+
+Verify these outputs correctly show up in the console output of a _terraform apply_.
 
 ```
 NOTE: Solutions can be found in the 'solutions' directory if help is needed
