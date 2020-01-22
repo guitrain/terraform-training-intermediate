@@ -1,6 +1,6 @@
 # Lab 1 - Terraform Command Line
 
-The purpose of this exercise is to get familiar with some of the more important Terraform commands. Specifically we 
+The purpose of this exercise is to get familiar with some of the more important Terraform commands. Specifically, we 
 will look at:-
 
 * show
@@ -61,41 +61,41 @@ Now lets run some commands:
 
 ### [terrraform state](https://www.terraform.io/docs/commands/state/index.html)
 
-* `terraform state list` - abreviated list of all resources (only `<resource>.<name>`)
+* `terraform state list` - abbreviated list of all resources (only `<resource>.<name>`)
 * `terraform state show <resource>.<name>` - show single resource from statefile. 
 
 ```
-Example, lets show the state of the first resource printed in the previous command:-
+Example, lets show the state of the first resource printed in the previous command:
         
 $ terraform state show aws_instance.instance[0]
         
 NOTE: Because we used the count sub-command to iterate through the creation of X number of instances, these 
 instances are stored in state as a list, and specific instances are references via their position in the list, 
-just like an array. In the above example we are printing the first instance in the liist. 
+just like an array. In the above example we are printing the first instance in the list. 
 ```
 
 * `terraform state rm <resource>.<name>` - remove the specified resource from statefile. 
  
 ```
-Lets remove the above instances from state with the following command:-
+Let's remove the above instances from state with the following command:
         
 $ terraform state rm aws_instance.instance[0]
         
-Verify it is removed from state:-
+Verify it is removed from state:
         
 $ terraform state list
         
 If we did a 'terraform destroy' it should destroy all resources provisioned by the configuration accept the 
-instance we removed from state. Lets not do that however as we have additional steps in this lab still to complete.
+instance we removed from state. Let's not do that however as we have additional steps in this lab still to complete.
 ```
 
 ### [terraform import](https://www.terraform.io/docs/commands/import.html)
 * `terraform import <resource>.<name> <resourceID>`` - import an existing resource into terraform state.
 
-Now lets add our instance back to terraform state usinig the _terraform import_ command. You will need the instance ID for
-this instance to import it. The instance ID can be fuond a number of ways, the easiest beiing to either log into the AWS
+Now let's add our instance back to terraform state using the _terraform import_ command. You will need the instance ID for
+this instance to import it. The instance ID can be found a number of ways, the easiest being to either log into the AWS
 Console and find it, or look back at the output from the _terraform state show aws_instance.instance[0]_ command we ran
-earlier:-
+earlier:
         
 $ terraform import aws_instance.instance[0] <ec2_instance_id>
 
@@ -104,15 +104,15 @@ $ terraform import aws_instance.instance[0] <ec2_instance_id>
 * `terraform taint <resource>.<name>` - marks a resource as tainted, forcing it to be destroyed and recreated on the next
 apply
 
-Lets mark a resource as tainted and then run a _terraform plan_ to confirm that this resource would be destroyed and
-recreated:-
+Let's mark a resource as tainted and then run a _terraform plan_ to confirm that this resource would be destroyed and
+recreated:
         
 $ terraform taint aws_instance.instance[1]
 $ terraform plan
         
 * `terraform untaint <resource>.<name>` - reverses a manual taint
 
-Now lets run _terraform untaint_ on the resource to remove the taint status:-
+Now let's run _terraform untaint_ on the resource to remove the taint status:
         
 $ terraform untaint aws_instance.instance[1]
 
