@@ -43,8 +43,8 @@ $
 
 ## Exercise
 
-1. Replace the source of the local modules with a source path for the module in GitHub. Also,
-   reference version v1.0.0 of the module. 
+1. Replace the source of the local modules with a source path for the module in GitHub. Also, 
+   reference version v1.0.0 of each module. 
 
    GitHub versions of the modules can be found at:
 
@@ -59,16 +59,20 @@ $
    having to pass any credentials as SSH keys can be configured.
    ```
 
-   * Go to the main.tf file from the previous lab and replace the local module source with
+   * Go to the main.tf file from the previous exercise 1 and replace the local module source with
      the GitHub source, version v1.0.0. Terraforms reference material to help you determine
      the correct syntax for the new source can be found [here](https://www.terraform.io/docs/modules/sources.html#github).
    * Once the updates are made, save your changes. The new module source will need to be 
      referenced. This can be done either via running 'terraform [init](https://www.terraform.io/docs/commands/init.html)' or 'terraform [get](https://www.terraform.io/docs/commands/get.html)'
-   * run 'terraform apply --auto-approve'
+   * Then run 'terraform apply --auto-approve'
+   
+   ```
+   NOTE: Solutions can be found in the 'solutions' directory if help is needed
+   ```
 
 2. Demonstrate how different module versions can be references and why that is important
 
-   * Update the version of the terraform-aws-sg module in main.tf to so v1.0.1. This version 
+   * Update the version of the terraform-aws-sg module in main.tf to v1.0.1. This version 
      has removed the rule permitting SSH.
    * Execute __terraform init__ (or _terraform get__) to download the new version of the
      module
@@ -84,7 +88,3 @@ terraform destroy
 ```
 
 
-
-```
-NOTE: Solutions can be found in the 'solutions' directory if help is needed
-```
