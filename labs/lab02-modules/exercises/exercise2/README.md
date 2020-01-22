@@ -53,10 +53,11 @@ $
    * https://github.com/conorcasey/terraform-aws-ec2.git
 
    ```
-   NOTE: For the purpose of this exercise the repositories have been made public and can be
-   sources via HTTPS. Typically, in a production environment however, repositories would 
-   be private and in this case SSH is the recommended way to source modules as it avoids 
-   having to pass any credentials as SSH keys can be configured.
+   NOTE: For the purpose of this exercise the repositories have been made public 
+   and can be sources via HTTPS. Typically, in a production environment however, 
+   repositories would be private and in this case SSH is the recommended way to 
+   source modules as it avoids having to pass any credentials as SSH keys can be 
+   configured.
    ```
 
    * Go to the main.tf file from the previous exercise 1 and replace the local module source with
@@ -67,7 +68,8 @@ $
    * Then run 'terraform apply --auto-approve'
    
    ```
-   NOTE: Solutions to these exercises can be found in the 'solutions' directory if help is needed
+   NOTE: Solutions to these exercises can be found in the 'solutions' directory 
+         if help is needed
    ```
 
 2. Demonstrate how different module versions can be references and why that is important
