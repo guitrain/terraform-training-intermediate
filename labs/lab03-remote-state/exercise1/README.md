@@ -35,10 +35,19 @@ $
 
 ## Exercise
 
-Specify a name for the S3 bucket in `variables.tf` by filling in a value for __default__ in the __bucket_name__ variable:
+Specify a name for the S3 bucket in `variables.tf` by replacig "_UNIQUE BUCKET NAME_" with a bucket name 
+in the __bucket_name__ variable.
 
 ```
-NOTE: S3 buck names MUST BE UNIQUE. Review S3 [bucket restrictions and limitiations](https://
+variable "bucket_name" {
+  description = "The name of the S3 bucket. Must be globally unique."
+  type        = string
+  default     = <UNIQUE BUCKET NAME>
+}
+```
+
+```
+NOTE: As suggested, S3 buck names MUST BE universally UNIQUE.
 ```
 
 Deploy the code:
