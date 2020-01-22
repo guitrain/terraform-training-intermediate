@@ -11,7 +11,7 @@ previous exercise. In this exercise we will hope to:
 * replace the source of the local modules with a source path in GitHub
 * demonstrate how different module versions can be references and why that is important
 
-Terraforms reference material for sourcing modules in GitHub can be found [here](https://www.terraform.io/docs/modules/sources.html#github)
+Terraforms reference material for sourcing modules in GitHub can be found [here](https://www.terraform.io/docs/modules/sources.html#github).
 
 ## Pre-requisites
 
