@@ -3,15 +3,15 @@
 In this exercse we will learn how to source and a modules stored in a repository in
 GitHub, and how to reference specific versions of that module. The ability to reference
 specific versions of a module is very important when it comes to adopting recommended
-Continuous Integratiion best practices.
+Continuous Integration best practices.
 
-This should be a short module where we are usinig the configuration provided in the
+This should be a short module where we are using the configuration provided in the
 previous exercise. In this exercise we will hope to :-
 
 * replace the source of the local modules with a source path in GitHub
 * demonstrate how different module versions can be references and why that is important
 
-Terraforms reference material for this can be found [here](https://www.terraform.io/docs/modules/sources.html#github)
+Terraforms reference material for sourcing modules in GitHub can be found [here](https://www.terraform.io/docs/modules/sources.html#github)
 
 ## Pre-requisites
 
@@ -43,7 +43,7 @@ $
 
 ## Exercise
 
-1. Replace the source of the local modules with a source path for the module GitHub. Also,
+1. Replace the source of the local modules with a source path for the module in GitHub. Also,
    reference version v1.0.0 of the module. 
 
    Versions of each of the local modules can be found at :-
